@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #d3d3d3;
         }
 
         header {
@@ -42,6 +42,15 @@
             margin: 0;
         }
 
+        .other-projects h2 {
+            margin-bottom: 40px; /* Added space between "Other Projects" and tiles */
+        }
+
+        h3 {
+            font-size: 28px; /* Featured project stays big */
+            margin: 0;
+        }
+
         a {
             color: #0078d4;
         }
@@ -52,6 +61,43 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+
+        .featured-project p {
+            margin-bottom: 30px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #b3b3b3;
+            margin: 20px 0;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .project-tile {
+            flex: 1 1 calc(33.33% - 20px);
+            box-sizing: border-box;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .project-tile h3 {
+                font-size: 24px; /* Smaller titles for tiles */
+            }
+
+        @media (max-width: 600px) {
+            .project-tile {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -61,37 +107,58 @@
     </header>
     <section>
         <h2>About Me</h2>
-        <p>Hi, I’m Jared Hintz (aka Sturmjager), a Unity Developer with over 6 years of experience crafting games for Android and Windows. From fast-paced shooters to vibrant platformers, I’ve honed my skills in C#, level design, and optimization to deliver fun, polished experiences. I’m passionate about solving tough problems—like tweaking physics for perfect jumps or coding enemy AI that keeps players on edge. Take a look at my projects below to see what I can bring to your team!</p>
+        <p>Hi! <br /><br />I’m Jared Hintz (aka Sturmjager), a Unity Developer with over 6 years of experience crafting games for Android and Windows. From fast-paced shooters to vibrant platformers, I’ve honed my skills in C#, level design, and optimization to deliver fun, polished experiences. I’m passionate about solving tough problems—like tweaking physics for perfect jumps or coding enemy AI that keeps players on edge. <br /> <br /> Take a look at my projects below to see what I can bring to your team!</p>
     </section>
-    <section>
-        <h2>Projects</h2>
+    <section class="featured-project">
+        <h2>Featured Project</h2>
         <p>
-            <strong>Blasterax</strong> - My current project, a remake of a 90's classic. <a href="https://sturmjager13.itch.io/the-last-stand">Play it here</a>.
-        </p>
-        <p>
-            <strong>Brickade</strong> - A colorful brickbreaking arcade game, my first Steam release! <a href="https://sturmjager13.itch.io/brickade">Play it here</a>.<br>
+            <h3>Brickade</h3><br>
+            A colorful brickbreaking arcade game, my first Steam release!<br>
+            <a href="https://store.steampowered.com/app/3158980/Brickade/">See it here</a>.<br>
             <img src="images/Brickade-screenshot.png" alt="Brickade gameplay screenshot" style="max-width: 100%;">
         </p>
-        <p>
-            <strong>Zombie Blitz Truck</strong> - A fast-paced top-down zombie shooter with progressively generated levels. <a href="https://sturmjager13.itch.io/zombie-blitz-truck">Play it here</a>.<br>
-            <img src="images/ZombieTruck-screenshot.png" alt="Zombie Blitz Truck gameplay screenshot" style="max-width: 100%;">
-        </p>
-        <p>
-            <strong>Power Surge</strong> - A short, intense platformer with lasers! <a href="https://sturmjager13.itch.io/space-shooter">Play it here</a>.<br>
-            <img src="images/PowerSurge-screenshot.png" alt="Power Surge gameplay screenshot" style="max-width: 100%;">
-        </p>
-        <p>
-            <strong>Growth & Decay</strong> - The sequel to Power Surge, a vibrant invaders-esque shooter. <a href="https://sturmjager13.itch.io/space-shooter">Play it here</a>.<br>
-            <img src="images/GrowthDecay-screenshot.png" alt="Growth & Decay gameplay screenshot" style="max-width: nuestra100%;">
-        </p>
-        <p>
-            <strong>Crazyneon</strong> - A precision survival game with endless levels. A collaboration, I coded the unique movement and shooting mechanics. <a href="https://sturmjager13.itch.io/crazyneon">Play it here</a>.<br>
-            <img src="images/Craazyneon-screenshot.png" alt="Crazyneon gameplay screenshot" style="max-width: 100%;">
-        </p>
-        <p>
-            <strong>Sparky the Igniter</strong> - A 3D exploration game, a collaboration, I coded the mechanics and created the particle effects. <a href="https://nanikisunami.itch.io/sparky-the-igniter">Play it here</a>.<br>
-            <img src="images/Sparky-screenshot.png" alt="Sparky the Igniter gameplay screenshot" style="max-width: 100%;">
-        </p>
+    </section>
+    <hr>
+    <section class="other-projects">
+        <h2>Other Projects</h2>
+        <div class="project-grid">
+            <div class="project-tile">
+                <h3>Blasterax</h3><br>
+                <img src="images/Blasterax-screenshot.png" alt="Blasterax gameplay screenshot" style="max-width: 100%;"><br>
+                My current project, a remake of a 90's classic.<br>
+                <br />Play coming soon!<br />
+            </div>
+            <div class="project-tile">
+                <h3>Zombie Blitz Truck</h3><br>
+                <img src="images/ZombieTruck-screenshot.png" alt="Zombie Blitz Truck gameplay screenshot" style="max-width: 100%;"><br>
+                A fast-paced top-down zombie shooter with progressively generated levels.<br>
+                <a href="https://sturmjager13.itch.io/zombie-blitz-truck">Play it here</a>.
+            </div>
+            <div class="project-tile">
+                <h3>Power Surge</h3><br>
+                <img src="images/PowerSurge-screenshot.png" alt="Power Surge gameplay screenshot" style="max-width: 100%;"><br>
+                A short, intense platformer with lasers!<br>
+                <a href="https://sturmjager13.itch.io/space-shooter">Play it here</a>.
+            </div>
+            <div class="project-tile">
+                <h3>Growth & Decay</h3><br>
+                <img src="images/GrowthDecay-screenshot.png" alt="Growth & Decay gameplay screenshot" style="max-width: 100%;"><br>
+                The sequel to Power Surge, a vibrant invaders-esque shooter.<br>
+                <a href="https://sturmjager13.itch.io/space-shooter">Play it here</a>.
+            </div>
+            <div class="project-tile">
+                <h3>Crazyneon</h3><br>
+                <img src="images/Crazyneon-screenshot.png" alt="Crazyneon gameplay screenshot" style="max-width: 100%;"><br>
+                A precision survival game with endless levels. A collaboration, I coded the unique movement and shooting mechanics.<br>
+                <a href="https://sturmjager13.itch.io/crazyneon">Play it here</a>.
+            </div>
+            <div class="project-tile">
+                <h3>Sparky the Igniter</h3><br>
+                <img src="images/Sparky-screenshot.png" alt="Sparky the Igniter gameplay screenshot" style="max-width: 100%;"><br>
+                A 3D exploration game, a collaboration, I coded the mechanics and created the particle effects.<br>
+                <a href="https://nanikisunami.itch.io/sparky-the-igniter">Play it here</a>.
+            </div>
+        </div>
     </section>
     <section>
         <h2>Contact</h2>
