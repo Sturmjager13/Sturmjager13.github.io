@@ -47,7 +47,7 @@
         }
 
         h3 {
-            font-size: 28px;
+            font-size: 24px;
             margin: 0;
         }
 
@@ -60,11 +60,12 @@
             margin-top: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            cursor: pointer; /* Shows it’s clickable */
+            cursor: pointer;
         }
 
         .featured-project p {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         hr {
@@ -99,6 +100,17 @@
                 flex: 1 1 100%;
             }
         }
+
+        .project-blurb {
+            font-style: italic;
+            font-size: 14px;
+            color: #555;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 3px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -106,75 +118,81 @@
         <h1>Jared Hintz <span style="font-size: 24px; color: #b3b3b3;">(Sturmjager)</span></h1>
         <p>Unity Developer Bringing Games to Life with C#</p>
     </header>
+
     <section>
         <h2>About Me</h2>
         <p>Hi! <br /><br />I’m Jared Hintz (aka Sturmjager), a Unity Developer with over 6 years of experience crafting games for Android and Windows. From fast-paced shooters to vibrant platformers, I’ve honed my skills in C#, level design, and optimization to deliver fun, polished experiences. I’m passionate about solving tough problems—like tweaking physics for perfect jumps or coding enemy AI that keeps players on edge. <br /> <br /> Take a look at my projects below to see what I can bring to your team!</p>
     </section>
+
     <section class="featured-project">
         <h2>Featured Project</h2>
-        <p>
-            <h3>Brickade</h3><br>
-            A colorful brickbreaking arcade game, my first Steam release!<br>
-            <a href="https://store.steampowered.com/app/3158980/Brickade/">See it here</a>.<br>
-            <a href="https://github.com/sturmjager13/sturmjager13.github.io/raw/main/images/Brickade-screenshot.png" target="_blank">
-                <img src="images/Brickade-screenshot.png" alt="Brickade gameplay screenshot" style="max-width: 100%;">
-            </a>
-        </p>
+        <br />
+        <h3>Brickade</h3>
+        <p>A colorful brickbreaking arcade game, my first Steam release!</p>
+       
+        <a href="https://store.steampowered.com/app/3158980/Brickade/" target="_blank">
+            <img src="images/Brickade-screenshot.png" alt="Brickade gameplay screenshot" style="max-width: 100%;">
+        </a>
+            <p class="project-blurb">I stayed up late way too many nights trying to get the little physics details working on this game!</p>  
     </section>
+
     <hr>
+
     <section class="other-projects">
         <h2>Other Projects</h2>
         <div class="project-grid">
             <div class="project-tile">
-                <h3>Blasterax</h3><br>
-                <a href="https://github.com/sturmjager13/sturmjager13.github.io/raw/main/images/Blasterax-screenshot.png" target="_blank">
+                <h3>Blasterax</h3>
+                <a href="https://sturmjager13.itch.io/the-last-stand" target="_blank">
                     <img src="images/Blasterax-screenshot.png" alt="Blasterax gameplay screenshot" style="max-width: 100%;">
-                </a><br>
-                My current project, a remake of a 90's classic.<br>
-                <a href="https://sturmjager13.itch.io/the-last-stand">Play it here</a>.
+                </a>
+                <p>My current project, a remake of a 90's classic.</p>
+                <p class="project-blurb">This remake is teaching me more about retro design than any tutorial ever could.</p>
             </div>
             <div class="project-tile">
-                <h3>Zombie Blitz Truck</h3><br>
-                <a href="https://github.com/sturmjager13/sturmjager13.github.io/raw/main/images/ZombieTruck-screenshot.png" target="_blank">
+                <h3>Zombie Blitz Truck</h3>
+                <a href="https://sturmjager13.itch.io/zombie-blitz-truck" target="_blank">
                     <img src="images/ZombieTruck-screenshot.png" alt="Zombie Blitz Truck gameplay screenshot" style="max-width: 100%;">
-                </a><br>
-                A fast-paced top-down zombie shooter with progressively generated levels.<br>
-                <a href="https://sturmjager13.itch.io/zombie-blitz-truck">Play it here</a>.
+                </a>
+                <p>A fast-paced top-down zombie shooter with progressively generated levels.</p>
+                <p class="project-blurb">My first attempt at procedural level generation in realtime!</p>
             </div>
             <div class="project-tile">
-                <h3>Power Surge</h3><br>
-                <a href="https://github.com/sturmjager13/sturmjager13.github.io/raw/main/images/PowerSurge-screenshot.png" target="_blank">
+                <h3>Power Surge</h3>
+                <a href="https://sturmjager13.itch.io/power-surge" target="_blank">
                     <img src="images/PowerSurge-screenshot.png" alt="Power Surge gameplay screenshot" style="max-width: 100%;">
-                </a><br>
-                A short, intense platformer with lasers!<br>
-                <a href="https://sturmjager13.itch.io/space-shooter">Play it here</a>.
+                </a>
+                <p>A short, intense platformer with lasers!</p>
+                <p class="project-blurb">A fun experiment with 2D lighting and sprite shaders.</p>
             </div>
             <div class="project-tile">
-                <h3>Growth & Decay</h3><br>
-                <a href="https://github.com/sturmjager13/sturmjager13.github.io/raw/main/images/GrowthDecay-screenshot.png" target="_blank">
+                <h3>Growth & Decay</h3>
+                <a href="https://sturmjager13.itch.io/growth-decay" target="_blank">
                     <img src="images/GrowthDecay-screenshot.png" alt="Growth & Decay gameplay screenshot" style="max-width: 100%;">
-                </a><br>
-                The sequel to Power Surge, a vibrant invaders-esque shooter.<br>
-                <a href="https://sturmjager13.itch.io/space-shooter">Play it here</a>.
+                </a>
+                <p>A invaders-esque shooter.<br />The sequel to "Power Surge".</p>
+                <p class="project-blurb">The lasers look better!</p>
             </div>
             <div class="project-tile">
-                <h3>Crazyneon</h3><br>
-                <a href="https://github.com/sturmjager13/sturmjager13.github.io/raw/main/images/Crazyneon-screenshot.png" target="_blank">
+                <h3>Crazyneon</h3>
+                <a href="https://sturmjager13.itch.io/crazyneon" target="_blank">
                     <img src="images/Crazyneon-screenshot.png" alt="Crazyneon gameplay screenshot" style="max-width: 100%;">
-                </a><br>
-                A precision survival game with endless levels. A collaboration, I coded the unique movement and shooting mechanics.<br>
-                <a href="https://sturmjager13.itch.io/crazyneon">Play it here</a>.
+                </a>
+                <p>A precision movement survival game with endless levels.</p>
+                <p class="project-blurb">A collaboration, I took the lead and also coded the unique movement and shooting mechanics.</p>
             </div>
             <div class="project-tile">
-                <h3>Sparky the Igniter</h3><br>
-                <a href="https://github.com/sturmjager13/sturmjager13.github.io/raw/main/images/Sparky-screenshot.png" target="_blank">
+                <h3>Sparky the Igniter</h3>
+                <a href="https://nanikisunami.itch.io/sparky-the-igniter" target="_blank">
                     <img src="images/Sparky-screenshot.png" alt="Sparky the Igniter gameplay screenshot" style="max-width: 100%;">
-                </a><br>
-                A 3D exploration game, a collaboration, I coded the mechanics and created the particle effects.<br>
-                <a href="https://nanikisunami.itch.io/sparky-the-igniter">Play it here</a>.
+                </a>
+                <p>A timed 3D exploration game</p>
+                <p class="project-blurb">A collaboration, I coded the mechanics and created the lighting and particle FX.</p>
             </div>
         </div>
+        <br />
     </section>
+
     <section>
         <h2>Contact</h2>
         <p>Email: sturmjagerstudios@gmail.com | <a href="https://sturmjager13.itch.io/">Itch Page</a> | <a href="https://github.com/sturmjager13">GitHub</a></p>
